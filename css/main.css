@@ -1,0 +1,19 @@
+html {
+  box-sizing: border-box; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+body {
+  background-image: url("img/bg.jpg"); }
+
+.banner {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  background-image: url("img/top-image.png"); }
+  .banner:last-child {
+    margin-right: 0; }

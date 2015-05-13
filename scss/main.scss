@@ -1,0 +1,13 @@
+
+@import
+ '../bower_components/bourbon/app/assets/stylesheets/bourbon';
+@import '../bower_components/neat/app/assets/stylesheets/neat';
+
+body{
+ background-image:url("img/bg.jpg");
+}
+
+.banner{
+  @include span-columns(12);
+  background-image:url("img/top-image.png")
+}
