@@ -3,11 +3,65 @@
  '../bower_components/bourbon/app/assets/stylesheets/bourbon';
 @import '../bower_components/neat/app/assets/stylesheets/neat';
 
-body{
- background-image:url("img/bg.jpg");
+*{
+  box-sizing: border-box;
 }
 
-.banner{
-  @include span-columns(12);
-  background-image:url("img/top-image.png")
+
+body {
+  @include outer-container(10240px);
+  background-image: url("../img/bg.jpg");
+  text-decoration:none;
+  font-family: Open Sans;
+  margin: 20px;
 }
+
+nav{
+  @include span-columns(12);
+}
+
+nav a{
+  @include span-columns(3);
+  background-color:red;
+  text-align: center;
+  color:white;
+}
+
+.imgButton{
+  height:70px;
+}
+
+
+.banner {
+  @include span-columns(12);
+  height: 360px;
+  background-image: url("../img/top-image.png");
+  border: white 12px solid;
+  box-shadow:0 5px 0  grey;
+  margin-bottom: 30px;
+}
+
+
+article{
+  @include span-columns(4);
+  border-color: white solid 4px;
+  background-color:white;
+  height:350px;
+  box-shadow:0 5px 0  grey;
+}
+
+.sk8er img{
+  @include span-columns(4);
+  height: 232px;
+  box-shadow:0 5px 0  grey;
+  margin-bottom:30px;
+}
+
+/* .sk8er img:last-child{
+  @include span-columns(8);
+}
+
+.sk8er img:nth-child(3){
+  height: 468px;
+}
+ */
