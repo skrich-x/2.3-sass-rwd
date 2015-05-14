@@ -128,6 +128,14 @@ article {
 .articles a {
   text-align: middle; }
 
+.sk8er {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .sk8er:last-child {
+    margin-right: 0; }
+
 .sk8er img {
   float: left;
   display: block;
@@ -135,9 +143,31 @@ article {
   width: 23.23176%;
   height: 232px;
   box-shadow: 0 5px 0 grey;
-  margin-bottom: 30px; }
+  border: white 5px solid;
+  margin-bottom: 30px;
+  position: relative; }
   .sk8er img:last-child {
     margin-right: 0; }
+
+/* 
+.lance{
+  background-image:url("../img/sk8er-4.png");
+}
+
+.rod{
+  background-image: url("../img/sk8er-3.png");
+}
+
+.tom{
+  background-image: url("../img/sk8er-2.png");
+}
+
+.steve{
+  background-image: url("..img/sk8er-1.png");
+} */
+.sk8er h2 {
+  position: absolute;
+  color: white; }
 
 /* .sk8er img:last-child{
   @include span-columns(8);
@@ -170,4 +200,12 @@ article {
   background-color: white;
   margin-top: 35px; }
   .contact:last-child {
+    margin-right: 0; }
+
+.text {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 40.29137%; }
+  .text:last-child {
     margin-right: 0; }

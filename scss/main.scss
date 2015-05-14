@@ -92,11 +92,37 @@ article{
 .articles a{
   text-align: middle;
 }
+
+.sk8er{
+  @include span-columns(12);
+}
 .sk8er img{
   @include span-columns(3);
   height: 232px;
   box-shadow:0 5px 0  grey;
+  border: white 5px solid;
   margin-bottom:30px;
+  position:relative;
+}
+/* 
+.lance{
+  background-image:url("../img/sk8er-4.png");
+}
+
+.rod{
+  background-image: url("../img/sk8er-3.png");
+}
+
+.tom{
+  background-image: url("../img/sk8er-2.png");
+}
+
+.steve{
+  background-image: url("..img/sk8er-1.png");
+} */
+.sk8er h2{
+  position:absolute;
+  color:white;
 }
 /* .sk8er img:last-child{
   @include span-columns(8);
@@ -124,4 +150,8 @@ article{
    background-color: white;
    margin-top:35px;
 
+ }
+
+ .text{
+   @include span-columns(5);
  }
