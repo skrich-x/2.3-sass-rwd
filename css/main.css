@@ -43,11 +43,39 @@ body {
 body a {
   text-decoration: none; }
 
+.socialbuttons {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 6.17215%;
+  height: 60px;
+  width: 60px;
+  float: right; }
+  .socialbuttons:last-child {
+    margin-right: 0; }
+
+.socialbuttons i {
+  color: rgba(255, 255, 255, 0.5); }
+
+.facebook {
+  background-color: #445897; }
+
+.rss {
+  background-color: #CC8F32; }
+
+.twitter {
+  background-color: #6A8DC7; }
+
+.youtube {
+  background-color: #B2382D; }
+
 nav {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 20px;
+  margin-right: 20px; }
   nav:last-child {
     margin-right: 0; }
 
@@ -60,7 +88,7 @@ nav a {
   text-align: center;
   color: white;
   height: 40px;
-  bottom-margin: 20px; }
+  box-shadow: 0 5px 0 grey; }
   nav a:last-child {
     margin-right: 0; }
 
@@ -83,7 +111,7 @@ nav a {
 
 .logo {
   position: absolute;
-  padding-top: 50px; }
+  padding: 50px 20px; }
 
 article {
   float: left;
@@ -123,14 +151,23 @@ article {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 100%; }
+  width: 100%;
+  background-color: white;
+  height: 296px; }
   .skateboards:last-child {
     margin-right: 0; }
+
+.skateboards a {
+  padding-left: 40px;
+  text-align: middle; }
 
 .contact {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 100%; }
+  width: 100%;
+  height: 360px;
+  background-color: white;
+  margin-top: 35px; }
   .contact:last-child {
     margin-right: 0; }

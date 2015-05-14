@@ -19,8 +19,36 @@ body a{
   text-decoration: none;
 }
 
+.socialbuttons{
+  @include span-columns(1);
+  height:60px;
+  width:60px;
+  float:right;
+
+}
+.socialbuttons i{
+  color:rgba(255,255,255,.5);
+
+}
+.facebook{
+  background-color: #445897;
+}
+.rss{
+  background-color: #CC8F32;
+}
+
+.twitter{
+  background-color: #6A8DC7;
+}
+
+.youtube{
+  background-color:#B2382D;
+
+}
 nav {
   @include span-columns(12);
+  margin-bottom:20px;
+  margin-right: 20px;
 }
 
 nav a {
@@ -29,7 +57,7 @@ nav a {
   text-align: center;
   color:white;
   height:40px;
-  bottom-margin:20px;
+  box-shadow:0 5px 0  grey;
 }
 
 .imgButton {
@@ -49,7 +77,8 @@ nav a {
 
 .logo{
   position:absolute;
-  padding-top: 50px;
+  padding: 50px 20px;
+
 }
 
 article{
@@ -80,10 +109,19 @@ article{
 
  .skateboards{
    @include span-columns(12);
+   background-color: white;
+   height:296px;
+}
 
- }
+.skateboards a{
+  padding-left:40px;
+  text-align: middle;
+}
 
  .contact{
    @include span-columns(12);
+   height: 360px;
+   background-color: white;
+   margin-top:35px;
 
  }
