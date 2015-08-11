@@ -1,0 +1,266 @@
+html {
+  box-sizing: border-box; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+body:before {
+  background-image: -webkit-linear-gradient(left, transparent 0, #eee 0, #eee 6.17215%, transparent 6.17215%, transparent 8.5298%, #eee 8.5298%, #eee 14.70196%, transparent 14.70196%, transparent 17.05961%, #eee 17.05961%, #eee 23.23176%, transparent 23.23176%, transparent 25.58941%, #eee 25.58941%, #eee 31.76157%, transparent 31.76157%, transparent 34.11922%, #eee 34.11922%, #eee 40.29137%, transparent 40.29137%, transparent 42.64902%, #eee 42.64902%, #eee 48.82117%, transparent 48.82117%, transparent 51.17883%, #eee 51.17883%, #eee 57.35098%, transparent 57.35098%, transparent 59.70863%, #eee 59.70863%, #eee 65.88078%, transparent 65.88078%, transparent 68.23843%, #eee 68.23843%, #eee 74.41059%, transparent 74.41059%, transparent 76.76824%, #eee 76.76824%, #eee 82.94039%, transparent 82.94039%, transparent 85.29804%, #eee 85.29804%, #eee 91.4702%, transparent 91.4702%, transparent 93.82785%, #eee 93.82785%, #eee 100%, transparent 100%);
+  background-image: -moz-linear-gradient(left, transparent 0, #eee 0, #eee 6.17215%, transparent 6.17215%, transparent 8.5298%, #eee 8.5298%, #eee 14.70196%, transparent 14.70196%, transparent 17.05961%, #eee 17.05961%, #eee 23.23176%, transparent 23.23176%, transparent 25.58941%, #eee 25.58941%, #eee 31.76157%, transparent 31.76157%, transparent 34.11922%, #eee 34.11922%, #eee 40.29137%, transparent 40.29137%, transparent 42.64902%, #eee 42.64902%, #eee 48.82117%, transparent 48.82117%, transparent 51.17883%, #eee 51.17883%, #eee 57.35098%, transparent 57.35098%, transparent 59.70863%, #eee 59.70863%, #eee 65.88078%, transparent 65.88078%, transparent 68.23843%, #eee 68.23843%, #eee 74.41059%, transparent 74.41059%, transparent 76.76824%, #eee 76.76824%, #eee 82.94039%, transparent 82.94039%, transparent 85.29804%, #eee 85.29804%, #eee 91.4702%, transparent 91.4702%, transparent 93.82785%, #eee 93.82785%, #eee 100%, transparent 100%);
+  background-image: -ms-linear-gradient(left, transparent 0, #eee 0, #eee 6.17215%, transparent 6.17215%, transparent 8.5298%, #eee 8.5298%, #eee 14.70196%, transparent 14.70196%, transparent 17.05961%, #eee 17.05961%, #eee 23.23176%, transparent 23.23176%, transparent 25.58941%, #eee 25.58941%, #eee 31.76157%, transparent 31.76157%, transparent 34.11922%, #eee 34.11922%, #eee 40.29137%, transparent 40.29137%, transparent 42.64902%, #eee 42.64902%, #eee 48.82117%, transparent 48.82117%, transparent 51.17883%, #eee 51.17883%, #eee 57.35098%, transparent 57.35098%, transparent 59.70863%, #eee 59.70863%, #eee 65.88078%, transparent 65.88078%, transparent 68.23843%, #eee 68.23843%, #eee 74.41059%, transparent 74.41059%, transparent 76.76824%, #eee 76.76824%, #eee 82.94039%, transparent 82.94039%, transparent 85.29804%, #eee 85.29804%, #eee 91.4702%, transparent 91.4702%, transparent 93.82785%, #eee 93.82785%, #eee 100%, transparent 100%);
+  background-image: -o-linear-gradient(left, transparent 0, #eee 0, #eee 6.17215%, transparent 6.17215%, transparent 8.5298%, #eee 8.5298%, #eee 14.70196%, transparent 14.70196%, transparent 17.05961%, #eee 17.05961%, #eee 23.23176%, transparent 23.23176%, transparent 25.58941%, #eee 25.58941%, #eee 31.76157%, transparent 31.76157%, transparent 34.11922%, #eee 34.11922%, #eee 40.29137%, transparent 40.29137%, transparent 42.64902%, #eee 42.64902%, #eee 48.82117%, transparent 48.82117%, transparent 51.17883%, #eee 51.17883%, #eee 57.35098%, transparent 57.35098%, transparent 59.70863%, #eee 59.70863%, #eee 65.88078%, transparent 65.88078%, transparent 68.23843%, #eee 68.23843%, #eee 74.41059%, transparent 74.41059%, transparent 76.76824%, #eee 76.76824%, #eee 82.94039%, transparent 82.94039%, transparent 85.29804%, #eee 85.29804%, #eee 91.4702%, transparent 91.4702%, transparent 93.82785%, #eee 93.82785%, #eee 100%, transparent 100%);
+  background-image: linear-gradient(to left, transparent 0, #eee 0, #eee 6.17215%, transparent 6.17215%, transparent 8.5298%, #eee 8.5298%, #eee 14.70196%, transparent 14.70196%, transparent 17.05961%, #eee 17.05961%, #eee 23.23176%, transparent 23.23176%, transparent 25.58941%, #eee 25.58941%, #eee 31.76157%, transparent 31.76157%, transparent 34.11922%, #eee 34.11922%, #eee 40.29137%, transparent 40.29137%, transparent 42.64902%, #eee 42.64902%, #eee 48.82117%, transparent 48.82117%, transparent 51.17883%, #eee 51.17883%, #eee 57.35098%, transparent 57.35098%, transparent 59.70863%, #eee 59.70863%, #eee 65.88078%, transparent 65.88078%, transparent 68.23843%, #eee 68.23843%, #eee 74.41059%, transparent 74.41059%, transparent 76.76824%, #eee 76.76824%, #eee 82.94039%, transparent 82.94039%, transparent 85.29804%, #eee 85.29804%, #eee 91.4702%, transparent 91.4702%, transparent 93.82785%, #eee 93.82785%, #eee 100%, transparent 100%);
+  content: "";
+  display: inline-block;
+  height: 100%;
+  left: 0;
+  margin: 0 auto;
+  max-width: 68em;
+  opacity: 0.4;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  z-index: -1; }
+
+/* @mixin clearfix {
+    * zoom: 1;
+    &:before, &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+} */
+* {
+  box-sizing: border-box; }
+
+body {
+  max-width: 1130px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../img/bg.jpg");
+  font-family: Open Sans;
+  margin-bottom: 20px; }
+  body::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+body a {
+  text-decoration: none; }
+
+.socialbuttons {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 6.17215%;
+  height: 60px;
+  width: 60px;
+  float: right; }
+  .socialbuttons:last-child {
+    margin-right: 0; }
+
+.socialbuttons i {
+  color: rgba(255, 255, 255, 0.5); }
+
+.facebook {
+  background-color: #445897; }
+
+.rss {
+  background-color: #CC8F32; }
+
+.twitter {
+  background-color: #6A8DC7; }
+
+.youtube {
+  background-color: #B2382D; }
+
+nav {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-bottom: 20px; }
+  nav:last-child {
+    margin-right: 0; }
+
+.navigation::before,
+.navigation::after {
+  content: "";
+  display: block;
+  width: 14px;
+  border: 2px solid white; }
+
+nav a {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  background-color: red;
+  text-align: center;
+  color: white;
+  height: 40px;
+  box-shadow: 0 5px 0 grey;
+  line-height: 40px; }
+  nav a:last-child {
+    margin-right: 0; }
+
+.imgButton {
+  height: 70px; }
+
+.banner {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  height: 360px;
+  background-image: url("../img/top-image.png");
+  border: white 12px solid;
+  box-shadow: 0 5px 0 grey;
+  margin-bottom: 30px;
+  position: relative; }
+  .banner:last-child {
+    margin-right: 0; }
+
+.logo {
+  position: absolute;
+  padding: 50px 20px; }
+
+article {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  border-color: white solid 4px;
+  background-color: white;
+  height: 350px;
+  box-shadow: 0 5px 0 grey;
+  padding-left: 30px;
+  padding-right: 30px; }
+  article:last-child {
+    margin-right: 0; }
+
+article h2 {
+  font-size: 20px; }
+
+.articles a {
+  text-align: middle; }
+
+.sk8er {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .sk8er:last-child {
+    margin-right: 0; }
+
+.sk8er h3 {
+  color: white; }
+
+.left-container {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%; }
+  .left-container:last-child {
+    margin-right: 0; }
+
+.lance,
+.rod {
+  float: left;
+  display: block;
+  margin-right: 3.57866%;
+  width: 48.21067%; }
+  .lance:last-child,
+  .rod:last-child {
+    margin-right: 0; }
+
+.lance {
+  background-image: url("../img/sk8er-4.png");
+  height: 230px;
+  background-repeat: no-repeat;
+  box-shadow: 0 5px 0 grey;
+  border: white 5px solid;
+  margin-bottom: 2em; }
+
+.rod {
+  margin-right: 0;
+  background-image: url("../img/sk8er-3.png");
+  height: 230px;
+  background-repeat: no-repeat;
+  box-shadow: 0 5px 0 grey;
+  border: white 5px solid;
+  margin-bottom: 2em; }
+
+.tommy {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  background-image: url("../img/sk8er-2.png");
+  height: 475px;
+  background-repeat: no-repeat;
+  box-shadow: 0 5px 0 grey;
+  border: white 5px solid;
+  margin-bottom: 2em; }
+  .tommy:last-child {
+    margin-right: 0; }
+
+.steve {
+  float: left;
+  display: block;
+  margin-right: 3.57866%;
+  width: 100%;
+  background-image: url("../img/sk8er-1.png");
+  height: 230px;
+  background-repeat: no-repeat;
+  box-shadow: 0 5px 0 grey;
+  border: white 5px solid;
+  margin-bottom: 2em; }
+  .steve:last-child {
+    margin-right: 0; }
+
+.skateboards {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  background-color: white;
+  height: 296px; }
+  .skateboards:last-child {
+    margin-right: 0; }
+
+.skateboards a {
+  padding-left: 40px;
+  text-align: middle; }
+
+.contact {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  height: 360px;
+  background-color: white;
+  margin-top: 35px; }
+  .contact:last-child {
+    margin-right: 0; }
+
+.contact p {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 57.35098%; }
+  .contact p:last-child {
+    margin-right: 0; }
+
+.text {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 40.29137%; }
+  .text:last-child {
+    margin-right: 0; }

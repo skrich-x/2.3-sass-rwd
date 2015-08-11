@@ -1,0 +1,211 @@
+$visual-grid:true;
+@import
+ '../bower_components/bourbon/app/assets/stylesheets/bourbon';
+
+@import '../bower_components/neat/app/assets/stylesheets/neat';
+
+/* @mixin clearfix {
+    * zoom: 1;
+    &:before, &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+} */
+
+*{
+  box-sizing: border-box;
+}
+
+
+body {
+  @include outer-container(1130px);
+  background-image: url("../img/bg.jpg");
+  font-family: Open Sans;
+  margin-bottom: 20px;
+}
+
+body a{
+  text-decoration: none;
+}
+
+.socialbuttons{
+  @include span-columns(1);
+  height:60px;
+  width:60px;
+  float:right;
+
+}
+.socialbuttons i{
+  color:rgba(255,255,255,.5);
+
+}
+.facebook{
+  background-color: #445897;
+}
+.rss{
+  background-color: #CC8F32;
+}
+
+.twitter{
+  background-color: #6A8DC7;
+}
+
+.youtube{
+  background-color:#B2382D;
+
+}
+nav {
+  @include span-columns(12);
+  margin-bottom:20px;
+}
+
+.navigation::before,
+.navigation::after {
+  content:"";
+  display: block;
+  width: 14px;
+  border: 2px solid white;
+}
+
+nav a {
+  @include span-columns(3);
+  background-color:red;
+  text-align: center;
+  color:white;
+  height:40px;
+  box-shadow:0 5px 0  grey;
+  line-height:40px;
+}
+
+.imgButton {
+  height:70px;
+}
+
+
+.banner {
+  @include span-columns(12);
+  height: 360px;
+  background-image: url("../img/top-image.png");
+  border: white 12px solid;
+  box-shadow:0 5px 0  grey;
+  margin-bottom: 30px;
+  position:relative;
+}
+
+.logo{
+  position:absolute;
+  padding: 50px 20px;
+
+}
+
+article{
+  @include span-columns(4);
+  border-color: white solid 4px;
+  background-color:white;
+  height:350px;
+  box-shadow:0 5px 0  grey;
+  padding-left:30px;
+  padding-right:30px;
+}
+
+article h2{
+  font-size: 20px;
+}
+
+.articles a{
+  text-align: middle;
+}
+
+.sk8er{
+  @include span-columns(12);
+}
+
+.sk8er h3{
+  color:white;
+}
+
+.left-container{
+ @include span-columns (8);
+}
+
+.lance,
+.rod{
+  @include span-columns(4 of 8);
+}
+
+
+
+.lance{
+
+  background-image:url("../img/sk8er-4.png");
+  height: 230px;
+  background-repeat: no-repeat;
+    box-shadow:0 5px 0  grey;
+    border: white 5px solid;
+    margin-bottom:2em;
+
+}
+
+.rod{
+  @include omega ();
+  background-image: url("../img/sk8er-3.png");
+  height: 230px;
+  background-repeat: no-repeat;
+    box-shadow:0 5px 0  grey;
+    border: white 5px solid;
+    margin-bottom:2em;
+  }
+
+.tommy{
+  @include span-columns(4);
+  background-image: url("../img/sk8er-2.png");
+  height: 475px;
+  background-repeat: no-repeat;
+  box-shadow:0 5px 0  grey;
+  border: white 5px solid;
+  margin-bottom:2em;
+
+}
+
+.steve{
+    @include span-columns(8 of 8);
+
+  background-image: url("../img/sk8er-1.png");
+  height: 230px;
+  background-repeat: no-repeat;
+  box-shadow:0 5px 0  grey;
+  border: white 5px solid;
+  margin-bottom:2em;
+}
+
+
+ .skateboards{
+   @include span-columns(12);
+   background-color: white;
+   height:296px;
+}
+
+.skateboards a{
+  padding-left:40px;
+  text-align: middle;
+}
+
+ .contact{
+   @include span-columns(12);
+   height: 360px;
+   background-color: white;
+   margin-top:35px;
+
+ }
+ .contact p {
+   @include span-columns(7);
+
+
+ }
+
+ .text{
+   @include span-columns(5);
+ }
