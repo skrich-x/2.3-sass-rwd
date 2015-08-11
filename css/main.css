@@ -25,6 +25,16 @@ body:before {
   width: 100%;
   z-index: -1; }
 
+/* @mixin clearfix {
+    * zoom: 1;
+    &:before, &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+} */
 * {
   box-sizing: border-box; }
 
@@ -74,10 +84,16 @@ nav {
   display: block;
   margin-right: 2.35765%;
   width: 100%;
-  margin-bottom: 20px;
-  margin-right: 20px; }
+  margin-bottom: 20px; }
   nav:last-child {
     margin-right: 0; }
+
+.navigation::before,
+.navigation::after {
+  content: "";
+  display: block;
+  width: 14px;
+  border: 2px solid white; }
 
 nav a {
   float: left;
@@ -88,7 +104,8 @@ nav a {
   text-align: center;
   color: white;
   height: 40px;
-  box-shadow: 0 5px 0 grey; }
+  box-shadow: 0 5px 0 grey;
+  line-height: 40px; }
   nav a:last-child {
     margin-right: 0; }
 
@@ -121,9 +138,14 @@ article {
   border-color: white solid 4px;
   background-color: white;
   height: 350px;
-  box-shadow: 0 5px 0 grey; }
+  box-shadow: 0 5px 0 grey;
+  padding-left: 30px;
+  padding-right: 30px; }
   article:last-child {
     margin-right: 0; }
+
+article h2 {
+  font-size: 20px; }
 
 .articles a {
   text-align: middle; }
@@ -136,47 +158,72 @@ article {
   .sk8er:last-child {
     margin-right: 0; }
 
-.sk8er img {
+.sk8er h3 {
+  color: white; }
+
+.left-container {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 23.23176%;
-  height: 232px;
-  box-shadow: 0 5px 0 grey;
-  border: white 5px solid;
-  margin-bottom: 30px;
-  position: relative; }
-  .sk8er img:last-child {
+  width: 65.88078%; }
+  .left-container:last-child {
     margin-right: 0; }
 
-/* 
-.lance{
-  background-image:url("../img/sk8er-4.png");
-}
+.lance,
+.rod {
+  float: left;
+  display: block;
+  margin-right: 3.57866%;
+  width: 48.21067%; }
+  .lance:last-child,
+  .rod:last-child {
+    margin-right: 0; }
 
-.rod{
+.lance {
+  background-image: url("../img/sk8er-4.png");
+  height: 230px;
+  background-repeat: no-repeat;
+  box-shadow: 0 5px 0 grey;
+  border: white 5px solid;
+  margin-bottom: 2em; }
+
+.rod {
+  margin-right: 0;
   background-image: url("../img/sk8er-3.png");
-}
+  height: 230px;
+  background-repeat: no-repeat;
+  box-shadow: 0 5px 0 grey;
+  border: white 5px solid;
+  margin-bottom: 2em; }
 
-.tom{
+.tommy {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
   background-image: url("../img/sk8er-2.png");
-}
+  height: 475px;
+  background-repeat: no-repeat;
+  box-shadow: 0 5px 0 grey;
+  border: white 5px solid;
+  margin-bottom: 2em; }
+  .tommy:last-child {
+    margin-right: 0; }
 
-.steve{
-  background-image: url("..img/sk8er-1.png");
-} */
-.sk8er h2 {
-  position: absolute;
-  color: white; }
+.steve {
+  float: left;
+  display: block;
+  margin-right: 3.57866%;
+  width: 100%;
+  background-image: url("../img/sk8er-1.png");
+  height: 230px;
+  background-repeat: no-repeat;
+  box-shadow: 0 5px 0 grey;
+  border: white 5px solid;
+  margin-bottom: 2em; }
+  .steve:last-child {
+    margin-right: 0; }
 
-/* .sk8er img:last-child{
-  @include span-columns(8);
-}
-
-.sk8er img:nth-child(3){
-  height: 468px;
-}
- */
 .skateboards {
   float: left;
   display: block;
@@ -200,6 +247,14 @@ article {
   background-color: white;
   margin-top: 35px; }
   .contact:last-child {
+    margin-right: 0; }
+
+.contact p {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 57.35098%; }
+  .contact p:last-child {
     margin-right: 0; }
 
 .text {

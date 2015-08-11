@@ -1,7 +1,19 @@
 $visual-grid:true;
 @import
  '../bower_components/bourbon/app/assets/stylesheets/bourbon';
+
 @import '../bower_components/neat/app/assets/stylesheets/neat';
+
+/* @mixin clearfix {
+    * zoom: 1;
+    &:before, &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+} */
 
 *{
   box-sizing: border-box;
@@ -48,7 +60,14 @@ body a{
 nav {
   @include span-columns(12);
   margin-bottom:20px;
-  margin-right: 20px;
+}
+
+.navigation::before,
+.navigation::after {
+  content:"";
+  display: block;
+  width: 14px;
+  border: 2px solid white;
 }
 
 nav a {
@@ -58,6 +77,7 @@ nav a {
   color:white;
   height:40px;
   box-shadow:0 5px 0  grey;
+  line-height:40px;
 }
 
 .imgButton {
@@ -87,6 +107,12 @@ article{
   background-color:white;
   height:350px;
   box-shadow:0 5px 0  grey;
+  padding-left:30px;
+  padding-right:30px;
+}
+
+article h2{
+  font-size: 20px;
 }
 
 .articles a{
@@ -96,42 +122,65 @@ article{
 .sk8er{
   @include span-columns(12);
 }
-.sk8er img{
-  @include span-columns(3);
-  height: 232px;
-  box-shadow:0 5px 0  grey;
-  border: white 5px solid;
-  margin-bottom:30px;
-  position:relative;
+
+.sk8er h3{
+  color:white;
 }
-/* 
+
+.left-container{
+ @include span-columns (8);
+}
+
+.lance,
+.rod{
+  @include span-columns(4 of 8);
+}
+
+
+
 .lance{
+
   background-image:url("../img/sk8er-4.png");
+  height: 230px;
+  background-repeat: no-repeat;
+    box-shadow:0 5px 0  grey;
+    border: white 5px solid;
+    margin-bottom:2em;
+
 }
 
 .rod{
+  @include omega ();
   background-image: url("../img/sk8er-3.png");
-}
+  height: 230px;
+  background-repeat: no-repeat;
+    box-shadow:0 5px 0  grey;
+    border: white 5px solid;
+    margin-bottom:2em;
+  }
 
-.tom{
+.tommy{
+  @include span-columns(4);
   background-image: url("../img/sk8er-2.png");
+  height: 475px;
+  background-repeat: no-repeat;
+  box-shadow:0 5px 0  grey;
+  border: white 5px solid;
+  margin-bottom:2em;
+
 }
 
 .steve{
-  background-image: url("..img/sk8er-1.png");
-} */
-.sk8er h2{
-  position:absolute;
-  color:white;
-}
-/* .sk8er img:last-child{
-  @include span-columns(8);
+    @include span-columns(8 of 8);
+
+  background-image: url("../img/sk8er-1.png");
+  height: 230px;
+  background-repeat: no-repeat;
+  box-shadow:0 5px 0  grey;
+  border: white 5px solid;
+  margin-bottom:2em;
 }
 
-.sk8er img:nth-child(3){
-  height: 468px;
-}
- */
 
  .skateboards{
    @include span-columns(12);
@@ -149,6 +198,11 @@ article{
    height: 360px;
    background-color: white;
    margin-top:35px;
+
+ }
+ .contact p {
+   @include span-columns(7);
+
 
  }
 
